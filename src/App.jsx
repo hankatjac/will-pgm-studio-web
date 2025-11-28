@@ -23,7 +23,7 @@ function App() {
   const { currentUser } = useContext(AppContext);
 
   return (
-    <BrowserRouter basename="/will-pgm-studio-vite"> 
+    <BrowserRouter basename="/will-pgm-studio-web"> 
       <AuthChecker />
       <Routes>
         <Route path="/" element={<Layout />}>
