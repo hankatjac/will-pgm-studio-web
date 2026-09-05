@@ -2,18 +2,16 @@ import { useState, useEffect, useContext } from "react";
 import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import Like from "./Like";
 import axios from "axios";
+import moment from "moment";
 import DOMPurify from "dompurify";
 import Sider from "./Sider";
 import { AppContext } from "../../contexts/appContext";
 import { MdDelete } from "react-icons/md";
 import { GrEdit } from "react-icons/gr";
-import Confirm from "../Confirm";
+import Confirm from "../../components/Confirm";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { MdOutlineTextsms } from "react-icons/md";
 import Comments from "./Comments";
-import dayjs from "dayjs";
-import relativeTime from "dayjs/plugin/relativeTime";
-dayjs.extend(relativeTime);
 
 const Single = () => {
   const { id } = useParams();
@@ -116,7 +114,7 @@ const Single = () => {
             <div>
               <span className="capitalize font-semibold">{post.username}</span>
               <p className="text-gray-500 text-sm">
-                Posted {dayjs(post.date).fromNow()}
+                Posted {moment(post.date).fromNow()}
               </p>
             </div>
             {currentUser?.username === post.username && (

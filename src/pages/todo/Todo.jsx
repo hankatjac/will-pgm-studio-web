@@ -5,7 +5,7 @@ import axios from "axios";
 import { AppContext } from "../../contexts/appContext";
 import { useNavigate } from "react-router-dom";
 
-import Confirm from "../Confirm";
+import Confirm from "../../components/Confirm";
 import { MdDelete } from "react-icons/md";
 import { GrEdit } from "react-icons/gr";
 

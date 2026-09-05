@@ -5,7 +5,7 @@ import axios from "axios";
 import { AppContext } from "../../contexts/appContext";
 import { useNavigate } from "react-router-dom";
 import { MdDeleteForever } from "react-icons/md";
-import Confirm from "../Confirm";
+import Confirm from "../../components/Confirm";
 
 const Event = () => {
   const [isLoading] = useState(false);
