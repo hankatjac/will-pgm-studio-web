@@ -1,11 +1,12 @@
 {
   "name": "will-pgm-studio",
   "private": true,
+  "homepage": "https://hankatjac.github.io/will-pgm-studio-web",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cp dist/index.html dist/404.html",
     "lint": "eslint .",
     "preview": "vite preview"
   },

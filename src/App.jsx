@@ -26,7 +26,7 @@ function App() {
   return (
     // <BrowserRouter basename="/will-pgm-studio-vite">
     <ThemeProvider storageKey="theme">
-      <BrowserRouter>
+      <BrowserRouter basename="/will-pgm-studio-web">
         <AuthChecker />
         <Routes>
           <Route path="/" element={<Layout />}>
